@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - '&msc MOVE_Y(5)'
+  - '&msc MOVE_Y(20)'
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(-5)'
+  - '&msc MOVE_Y(20)'
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - '&msc MOVE_X(20)'
   - H
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - '&msc MOVE_X(20)'
   - N
   - M
   - {t: ',', s: <}
@@ -80,11 +80,11 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - REDO
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Sft+Z
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
