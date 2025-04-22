@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:pan-up$$
+  - '&msc MOVE_Y(5)'
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:pan-down$$
+  - '&msc MOVE_Y(-5)'
   - Y
   - U
   - I
@@ -80,11 +80,11 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - REDO
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
