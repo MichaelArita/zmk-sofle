@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_Y(-20)'
   - Y
   - U
   - I
