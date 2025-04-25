@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
+  - Number and Symbol Layer
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,7 +81,7 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+W, h: Ctl+Sft+T}
+  - '&Browser_Tabs'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Ctl+N, h: Ctl+Sft+N}
@@ -185,8 +185,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - _
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
@@ -194,7 +194,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ',', s: <}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - .
   Numpad Layer:
   - {t: Base Layer, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
