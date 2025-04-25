@@ -81,10 +81,10 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+Sft+T, h: Ctl+W}
+  - {t: Ctl+W, h: Ctl+Sft+T}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+Sft+N, h: Ctl+N}
+  - {t: Ctl+N, h: Ctl+Sft+N}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
