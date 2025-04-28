@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: 'Ctl+$$mdi:backspace$$', h: '$$mdi:backspace$$'}
+  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
