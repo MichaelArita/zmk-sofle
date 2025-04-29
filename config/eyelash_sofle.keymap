@@ -61,24 +61,26 @@
         bindings = <&kp LC(W)>, <&mt LC(LS(T)) LC(T)>;
     };
 
+    backspace: backspace {
+        compatible = "zmk,behavior-tap-dance";
+        label = "BACKSPACE";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
+    };
+
+    fancyzones: fancyzones {
+        compatible = "zmk,behavior-tap-dance";
+        label = "FANCYZONES";
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_GUI>, <&kp LC(LA(LEFT_GUI))>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
         Layer3 {
             bindings = <&mo 4>;
             key-positions = <56 60>;
-        };
-
-        ScrollDownFaster {
-            bindings = <&msc MOVE_Y(-60)>;
-            key-positions = <39 19>;
-            layers = <0>;
-        };
-
-        ScrollUpFaster {
-            bindings = <&msc MOVE_Y(60)>;
-            key-positions = <39 6>;
-            layers = <0>;
         };
     };
 
@@ -101,8 +103,8 @@
         UtilityKeys {
             bindings = <
 &kp F1      &kp F2     &kp F3            &kp F4           &kp F5        &kp F6                 &mmv MOVE_UP     &kp F7           &kp F8      &kp F9    &kp F10    &kp F11  &kp F12
-&trans      &trans     &Browser_Tabs     &kp LC(LS(TAB))  &kp LC(TAB)   &mt LC(LS(N)) LC(N)    &mmv MOVE_DOWN   &kp PG_UP        &kp HOME    &kp UP    &kp END    &trans   &trans
-&trans      &kp LC(A)  &kp LEFT_CONTROL  &kp LEFT_GUI     &kp LEFT_ALT  &kp CAPS               &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans
+&trans      &trans     &Browser_Tabs     &kp LC(LS(TAB))  &kp LC(TAB)   &mt LC(LS(N)) LC(N)    &mmv MOVE_DOWN   &kp PG_UP        &kp HOME    &kp UP    &kp END    &trans   &mt BACKSPACE LA(BACKSPACE)
+&trans      &kp LC(A)  &kp LEFT_CONTROL  &fancyzones      &kp LEFT_ALT  &kp CAPS               &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans
 &trans      &kp LC(Z)  &kp LC(X)         &kp LC(C)        &kp LC(V)     &trans                 &mmv MOVE_RIGHT  &kp PRINTSCREEN  &trans      &trans    &trans     &trans   &trans
 &kp C_MUTE  &trans     &trans            &trans           &trans        &trans                 &mkp LCLK        &trans           &kp DELETE  &trans    &trans     &trans
             >;
