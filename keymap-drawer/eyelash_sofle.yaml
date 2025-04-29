@@ -91,11 +91,11 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Alt+$$mdi:backspace$$', h: '$$mdi:backspace$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
+  - '&fancyzones'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -328,9 +328,3 @@ layers:
 combos:
 - p: [56, 60]
   k: Settings and Navigation Layer
-- p: [39, 19]
-  k: '&msc MOVE_Y(-60)'
-  l: [Base Layer]
-- p: [39, 6]
-  k: '&msc MOVE_Y(60)'
-  l: [Base Layer]
