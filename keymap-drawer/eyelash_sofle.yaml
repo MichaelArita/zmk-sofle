@@ -405,3 +405,9 @@ combos:
   k: '{'
 - p: [46, 47]
   k: '}'
+- p: [30, 29]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [34, 35]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [13, 14]
+  k: $$mdi:keyboard-esc$$
