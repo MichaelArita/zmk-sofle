@@ -112,6 +112,21 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <46 47>;
         };
+
+        modRowLSHIFT {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <30 29>;
+        };
+
+        modRowRSHIFT {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <34 35>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
