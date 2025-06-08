@@ -75,6 +75,13 @@
         bindings = <&kp LEFT_GUI>, <&kp LC(LA(LEFT_GUI))>;
     };
 
+    modTapDance: modTapDance {
+        compatible = "zmk,behavior-tap-dance";
+        label = "MODTAPDANCE";
+        #binding-cells = <0>;
+        bindings = <&mo 1>, <&none>, <&mo 5>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -134,11 +141,11 @@
 
         Base {
             bindings = <
-&mt TILDE GRAVE   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
-&kp TAB           &kp Q      &kp W         &kp E         &kp R   &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
-&kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F   &kp G        &msc MOVE_X(20)   &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
-&kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V   &kp B        &msc MOVE_X(20)   &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER         &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
+&mt TILDE GRAVE   &kp N1     &kp N2        &kp N3        &kp N4        &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
+&kp TAB           &kp Q      &kp W         &kp E         &kp R         &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
+&kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F         &kp G        &msc MOVE_X(20)   &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
+&kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V         &kp B        &msc MOVE_X(20)   &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &modTapDance  &kp SPACE    &kp ENTER         &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -196,14 +203,17 @@
             label = "Settings and Navigation Layer";
         };
 
-        layer_5 {
+        layer_6 {
+            display-name = "Base Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mt TILDE GRAVE  &kp N0     &kp N9    &kp N8     &kp N7  &kp N6       &msc MOVE_Y(20)   &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
+&kp BSPC         &kp P      &kp O     &kp I      &kp U   &kp Y        &msc MOVE_Y(-20)  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
+&kp RCTRL        &kp SEMI   &kp L     &kp K      &kp J   &kp H        &msc MOVE_X(20)   &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
+&kp RSHFT        &kp FSLH   &kp DOT   &kp COMMA  &kp M   &kp N        &msc MOVE_X(20)   &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE       &kp RCTRL  &kp RGUI  &kp RALT   &trans  &kp SPACE    &kp ENTER         &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 
