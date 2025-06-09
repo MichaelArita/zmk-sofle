@@ -141,11 +141,11 @@
 
         Base {
             bindings = <
-&mt TILDE GRAVE   &kp N1     &kp N2        &kp N3        &kp N4        &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
-&kp TAB           &kp Q      &kp W         &kp E         &kp R         &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
-&kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F         &kp G        &msc MOVE_X(20)   &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
-&kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V         &kp B        &msc MOVE_X(20)   &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &modTapDance  &kp SPACE    &kp ENTER         &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
+&mt TILDE GRAVE   &kp N1          &kp N2          &kp N3            &kp N4              &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7               &kp N8             &kp N9           &kp N0              &trans
+&kp TAB           &kp Q           &kp W           &kp E             &kp R               &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U                &kp I              &kp O            &kp P               &mt LC(BACKSPACE) BACKSPACE
+&kp LEFT_CONTROL  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G        &msc MOVE_X(20)   &kp H      &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
+&kp LEFT_SHIFT    &kp Z           &kp X           &kp C             &kp V               &kp B        &msc MOVE_X(20)   &kp N      &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp RIGHT_CONTROL
+&kp C_MUTE        &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT      &modTapDance        &kp SPACE    &kp ENTER         &kp ENTER  &mo 2                &kp RIGHT_SHIFT    &kp RIGHT_GUI    &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
