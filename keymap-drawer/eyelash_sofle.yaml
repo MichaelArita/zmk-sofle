@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -328,21 +328,17 @@ layers:
 combos:
 - p: [56, 60]
   k: Settings and Navigation Layer
-- p: [17, 18]
+- p: [17, 16]
   k: {t: '[', s: '{'}
-- p: [20, 21]
+- p: [21, 22]
   k: {t: ']', s: '}'}
-- p: [31, 30]
-  k: (
-- p: [33, 34]
-  k: )
-- p: [43, 44]
-  k: '{'
-- p: [46, 47]
-  k: '}'
 - p: [30, 29]
-  k: $$mdi:apple-keyboard-shift$$
+  k: (
 - p: [34, 35]
-  k: $$mdi:apple-keyboard-shift$$
+  k: )
+- p: [43, 42]
+  k: '{'
+- p: [47, 48]
+  k: '}'
 - p: [13, 14]
   k: $$mdi:keyboard-esc$$
