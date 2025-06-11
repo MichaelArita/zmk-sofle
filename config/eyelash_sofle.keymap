@@ -112,38 +112,6 @@
             key-positions = <56 60>;
         };
 
-        bracketLeft {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 16>;
-            slow-release;
-        };
-
-        bracketRight {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 22>;
-            slow-release;
-        };
-
-        parenLeft {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <30 29>;
-        };
-
-        parenRight {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <34 35>;
-        };
-
-        braceLeft {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <43 42>;
-        };
-
-        braceRight {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <47 48>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
