@@ -115,11 +115,13 @@
         bracketLeft {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 16>;
+            slow-release;
         };
 
         bracketRight {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 22>;
+            slow-release;
         };
 
         parenLeft {
