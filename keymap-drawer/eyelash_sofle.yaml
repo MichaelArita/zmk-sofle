@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -186,7 +186,7 @@ layers:
   - $$mdi:volume-off$$
   - _
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:play-pause$$
@@ -249,8 +249,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
-  - {t: '0', s: )}
   - $$mdi:keyboard-tab$$
+  - {t: '0', s: )}
   - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -382,11 +382,11 @@ layers:
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-tab$$', h: Utility Layer}
+  - Utility Layer
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
+  - Number and Symbol Layer
   - $$mdi:apple-keyboard-shift$$
   - RIGHT GUI
   - $$mdi:keyboard-esc$$
