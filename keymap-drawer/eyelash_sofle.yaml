@@ -338,7 +338,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: Base Layer, h: toggle}
+  - {t: Gaming, h: toggle}
   - $$mdi:keyboard-tab$$
   - Q
   - W
