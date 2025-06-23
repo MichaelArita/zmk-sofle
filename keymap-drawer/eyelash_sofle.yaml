@@ -31,15 +31,15 @@ layers:
   - A
   - S
   - D
-  - F
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - '&msc MOVE_X(20)'
   - H
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: ;, h: ':', s: ':'}
+  - {t: '''', h: '"', s: '"'}
   - $$mdi:apple-keyboard-option$$
   - Z
   - X
@@ -49,9 +49,9 @@ layers:
   - '&msc MOVE_X(20)'
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
@@ -61,10 +61,10 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:apple-keyboard-control$$', h: Number and Symbol Layer}
+  - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
   - $$mdi:apple-keyboard-shift$$
   - RIGHT GUI
-  - {t: '$$mdi:backspace$$', h: '$$mdi:keyboard-esc$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:keyboard-esc$$'}
   Gaming:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -126,7 +126,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Number and Symbol Layer
+  - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
   - $$mdi:apple-keyboard-shift$$
   - RIGHT GUI
   - $$mdi:keyboard-esc$$
@@ -302,7 +302,7 @@ layers:
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
-  - {t: '-', s: _}
+  - {t: '-', h: _, s: _}
   - +
   - '{'
   - '}'
@@ -314,7 +314,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
-  - _
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
