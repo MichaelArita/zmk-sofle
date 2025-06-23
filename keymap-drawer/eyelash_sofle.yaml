@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - GLOBE
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', h: '~', s: '~'}
   - Q
   - W
@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: Utility Layer}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
   - $$mdi:apple-keyboard-shift$$
