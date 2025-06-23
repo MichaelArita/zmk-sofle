@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -61,10 +61,10 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: Number and Symbol Layer}
+  - {t: '$$mdi:apple-keyboard-control$$', h: Number and Symbol Layer}
   - $$mdi:apple-keyboard-shift$$
   - RIGHT GUI
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:keyboard-esc$$'}
   Gaming:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
