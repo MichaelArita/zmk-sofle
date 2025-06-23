@@ -31,7 +31,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - F
   - G
   - '&msc MOVE_X(20)'
   - H
