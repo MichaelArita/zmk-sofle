@@ -114,6 +114,13 @@
         hold-trigger-key-positions = <7 20 46 33 47 34 21 8 9 10 35 22 23 36 37 24 11 50 49 48 51 38 25 12 63 61 62 60 59>;
     };
 
+    SynergySwitch: SynergySwitch {
+        compatible = "zmk,behavior-tap-dance";
+        label = "SYNERGYSWITCH";
+        #binding-cells = <0>;
+        bindings = <&kp LC(LA(LS(E)))>, <&kp LS(LA(LC(W)))>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -128,11 +135,11 @@
 
         Base {
             bindings = <
-&kp ESCAPE               &kp N1     &kp N2        &kp N3          &kp N4      &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7            &kp N8                       &kp N9                           &kp N0                       &trans
-&auto_shift TILDE GRAVE  &kp Q      &kp W         &kp E           &kp R       &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U             &kp I                        &kp O                            &kp P                        &kp LC(BACKSPACE)
-&kp LEFT_CONTROL         &kp A      &kp S         &kp D           &kp F       &kp G        &msc MOVE_X(20)   &kp H      &kp J             &kp K                        &kp L                            &auto_shift COLON SEMICOLON  &auto_shift DOUBLE_QUOTES SINGLE_QUOTE
-&kp LEFT_ALT             &kp Z      &kp X         &kp C           &kp V       &kp B        &msc MOVE_X(20)   &kp N      &kp M             &auto_shift LESS_THAN COMMA  &auto_shift GREATER_THAN PERIOD  &auto_shift QUESTION SLASH   &kp RIGHT_ALT
-&kp C_MUTE               &kp LCTRL  &kp LEFT_GUI  &kp LEFT_SHIFT  &lth 5 TAB  &kp SPACE    &kp RIGHT_ALT     &kp ENTER  &lth 4 BACKSPACE  &kp RIGHT_SHIFT              &kp RIGHT_GUI                    &mt ESCAPE RIGHT_CONTROL
+&kp ESCAPE               &kp N1     &kp N2        &kp N3          &kp N4      &kp N5       &msc MOVE_Y(20)     &kp N6     &kp N7            &kp N8                       &kp N9                           &kp N0                       &trans
+&auto_shift TILDE GRAVE  &kp Q      &kp W         &kp E           &kp R       &kp T        &msc (MOVE_Y(-20))  &kp Y      &kp U             &kp I                        &kp O                            &kp P                        &kp LC(BACKSPACE)
+&kp LEFT_CONTROL         &kp A      &kp S         &kp D           &kp F       &kp G        &msc MOVE_X(20)     &kp H      &kp J             &kp K                        &kp L                            &auto_shift COLON SEMICOLON  &auto_shift DOUBLE_QUOTES SINGLE_QUOTE
+&kp LEFT_ALT             &kp Z      &kp X         &kp C           &kp V       &kp B        &msc MOVE_X(20)     &kp N      &kp M             &auto_shift LESS_THAN COMMA  &auto_shift GREATER_THAN PERIOD  &auto_shift QUESTION SLASH   &kp RIGHT_ALT
+&kp C_MUTE               &kp LCTRL  &kp LEFT_GUI  &kp LEFT_SHIFT  &lth 5 TAB  &kp SPACE    &kp RIGHT_ALT       &kp ENTER  &lth 4 BACKSPACE  &kp RIGHT_SHIFT              &kp RIGHT_GUI                    &mt ESCAPE RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -142,11 +149,11 @@
         gaming {
             display-name = "Gaming";
             bindings = <
-&kp ESCAPE        &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &msc MOVE_Y(20)   &kp N6     &kp N7            &kp N8           &kp N9         &kp N0      &tog 1
-&kp TAB           &kp Q      &kp W         &kp E         &kp R   &kp T        &msc MOVE_Y(-20)  &kp Y      &kp U             &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
-&kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F   &kp G        &msc MOVE_X(20)   &kp H      &kp J             &kp K            &kp L          &kp SEMI    &kp APOS
-&kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V   &kp B        &msc MOVE_X(20)   &kp N      &kp M             &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE        &kp GRAVE  &kp LEFT_GUI  &kp LEFT_ALT  &mo 5   &kp SPACE    &kp ENTER         &kp ENTER  &lth 4 BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
+&kp ESCAPE        &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &msc MOVE_Y(20)     &kp N6     &kp N7            &kp N8           &kp N9         &kp N0      &tog 1
+&kp TAB           &kp Q      &kp W         &kp E         &kp R   &kp T        &msc (MOVE_Y(-20))  &kp Y      &kp U             &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
+&kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F   &kp G        &msc MOVE_X(20)     &kp H      &kp J             &kp K            &kp L          &kp SEMI    &kp APOS
+&kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V   &kp B        &msc MOVE_X(20)     &kp N      &kp M             &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE        &kp GRAVE  &kp LEFT_GUI  &kp LEFT_ALT  &mo 5   &kp SPACE    &kp ENTER           &kp ENTER  &lth 4 BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -155,11 +162,11 @@
         one-handed {
             display-name = "One Hand Layout";
             bindings = <
-&mt TILDE GRAVE  &kp N0     &kp N9    &kp N8     &kp N7  &kp N6       &msc MOVE_Y(20)   &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
-&kp BSPC         &kp P      &kp O     &kp I      &kp U   &kp Y        &msc MOVE_Y(-20)  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
-&kp RCTRL        &kp SEMI   &kp L     &kp K      &kp J   &kp H        &msc MOVE_X(20)   &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
-&kp RSHFT        &kp FSLH   &kp DOT   &kp COMMA  &kp M   &kp N        &msc MOVE_X(20)   &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE       &kp RCTRL  &kp RGUI  &kp RALT   &trans  &kp SPACE    &kp ENTER         &kp ENTER  &mo 4   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
+&mt TILDE GRAVE  &kp N0     &kp N9    &kp N8     &kp N7  &kp N6       &msc MOVE_Y(20)     &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &trans
+&kp BSPC         &kp P      &kp O     &kp I      &kp U   &kp Y        &msc (MOVE_Y(-20))  &kp Y      &kp U   &kp I            &kp O          &kp P       &mt LC(BACKSPACE) BACKSPACE
+&kp RCTRL        &kp SEMI   &kp L     &kp K      &kp J   &kp H        &msc MOVE_X(20)     &kp H      &kp J   &kp K            &kp L          &kp SEMI    &kp APOS
+&kp RSHFT        &kp FSLH   &kp DOT   &kp COMMA  &kp M   &kp N        &msc MOVE_X(20)     &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE       &kp RCTRL  &kp RGUI  &kp RALT   &trans  &kp SPACE    &kp ENTER           &kp ENTER  &mo 4   &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -167,11 +174,11 @@
 
         Numpad {
             bindings = <
-&tog 3      &trans         &trans        &trans        &trans        &trans       &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &trans
-&kp ENTER   &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &trans       &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS     &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE  &kp N0         &kp N0        &kp PERIOD    &trans        &trans       &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&tog 3      &trans         &trans        &trans        &trans        &trans       &mmv MOVE_UP     &trans  &trans           &trans           &trans           &trans  &trans
+&kp ENTER   &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &trans       &mmv MOVE_DOWN   &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans      &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS     &mmv MOVE_LEFT   &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans      &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &mmv MOVE_RIGHT  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&kp C_MUTE  &kp N0         &kp N0        &kp PERIOD    &trans        &trans       &mkp LCLK        &trans  &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -193,11 +200,11 @@
 
         UtilityKeys {
             bindings = <
-&kp F1      &kp F2     &kp F3            &kp F4           &kp F5        &kp F6                 &mmv MOVE_UP     &kp F7           &kp F8    &kp F9    &kp F10    &kp F11  &kp F12
-&trans      &trans     &Browser_Tabs     &kp LC(LS(TAB))  &kp LC(TAB)   &mt LC(LS(N)) LC(N)    &mmv MOVE_DOWN   &kp PG_UP        &kp HOME  &kp UP    &kp END    &trans   &kp DELETE
-&trans      &kp LC(A)  &kp LEFT_CONTROL  &fancyzones      &kp LEFT_ALT  &kp CAPS               &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
-&trans      &kp LC(Z)  &kp LC(X)         &kp LC(C)        &kp LC(V)     &trans                 &mmv MOVE_RIGHT  &kp PRINTSCREEN  &trans    &trans    &trans     &trans   &trans
-&kp C_MUTE  &trans     &trans            &trans           &trans        &trans                 &mkp LCLK        &trans           &trans    &trans    &trans     &trans
+&kp F1      &kp F2     &kp F3            &kp F4           &kp F5        &kp F6                   &mmv MOVE_UP     &kp F7           &kp F8    &kp F9    &kp F10    &kp F11  &kp F12
+&trans      &trans     &Browser_Tabs     &kp LC(LS(TAB))  &kp LC(TAB)   &mt (LC(LS(N))) LC(N)    &mmv MOVE_DOWN   &kp PG_UP        &kp HOME  &kp UP    &kp END    &trans   &kp DELETE
+&trans      &kp LC(A)  &kp LEFT_CONTROL  &fancyzones      &kp LEFT_ALT  &kp CAPS                 &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&trans      &kp LC(Z)  &kp LC(X)         &kp LC(C)        &kp LC(V)     &trans                   &mmv MOVE_RIGHT  &kp PRINTSCREEN  &trans    &trans    &trans     &trans   &SynergySwitch
+&kp C_MUTE  &trans     &trans            &trans           &trans        &trans                   &mkp LCLK        &trans           &trans    &trans    &trans     &trans
             >;
 
             display-name = "Utility Layer";
