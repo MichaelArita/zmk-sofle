@@ -116,7 +116,7 @@
 &auto_shift TILDE GRAVE  &kp Q         &kp W         &kp E           &kp R       &kp T        &kp DOWN_ARROW   &kp Y      &kp U             &kp I                        &kp O                            &kp P                        &kp BSLH
 &kp LEFT_CONTROL         &kp A         &kp S         &kp D           &kp F       &kp G        &kp LEFT_ARROW   &kp H      &kp J             &kp K                        &kp L                            &auto_shift COLON SEMICOLON  &auto_shift DOUBLE_QUOTES SINGLE_QUOTE
 &kp LEFT_ALT             &kp Z         &kp X         &kp C           &kp V       &kp B        &kp RIGHT_ARROW  &kp N      &kp M             &auto_shift LESS_THAN COMMA  &auto_shift GREATER_THAN PERIOD  &auto_shift QUESTION SLASH   &kp RIGHT_ALT
-&kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_SHIFT  &lth 3 TAB  &kp SPACE    &kp ENTER        &kp SPACE  &lth 2 BACKSPACE  &kp RIGHT_SHIFT              &kp RGUI                         &mt ESCAPE RIGHT_CONTROL
+&kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_SHIFT  &lth 3 TAB  &kp SPACE    &kp ENTER        &kp ENTER  &lth 2 BACKSPACE  &kp RIGHT_SHIFT              &kp RGUI                         &mt ESCAPE RIGHT_CONTROL
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
