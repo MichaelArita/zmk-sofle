@@ -147,7 +147,7 @@
 &kp F1  &kp F2     &kp F3         &kp F4           &kp F5       &kp F6                   &trans  &kp F7           &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
 &trans  &trans     &Browser_Tabs  &kp LC(LS(TAB))  &kp LC(TAB)  &mt (LC(LS(N))) LC(N)    &trans  &kp PAGE_UP      &kp HOME        &kp UP_ARROW    &kp END          &trans   &kp DEL
 &trans  &kp LC(A)  &kp LCTRL      &trans           &kp LALT     &kp CAPS                 &trans  &kp PAGE_DOWN    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&trans  &kp LC(Z)  &kp LC(X)      &kp LC(C)        &kp LC(V)    &trans                   &trans  &kp PRINTSCREEN  &trans          &trans          &trans           &trans   &trans
+&trans  &kp LC(Z)  &kp LC(X)      &kp LC(C)        &kp LC(V)    &caps_word               &trans  &kp PRINTSCREEN  &trans          &trans          &trans           &trans   &trans
 &trans  &trans     &trans         &trans           &trans       &trans                   &trans  &trans           &trans          &trans          &trans           &trans
             >;
 
